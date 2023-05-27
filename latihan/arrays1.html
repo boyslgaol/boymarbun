@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var ip = [2.5, 3.3, 1.4, 2.6, 3.8];
+      //mencari jumlah
+      var jumlah = 0;
+      var i;
+      for (i = 0; i <= 4; i++) jumlah = jumlah + ip[i];
+      document.write("Jumlah IP:", jumlah);
+      //mencari rata-rata
+      var rata2;
+      rata2 = jumlah / 5;
+      document.write("<br><br>Rata-rata IP:", rata2);
+      //mencari banyaknya data
+      let size = ip.length;
+      document.write("<br><br>Banyak Data IP:", size);
+      //maksimal data
+      var maks = ip[0];
+      for (i = 1; i <= 4; i++) if (ip[i] > maks) maks = ip[i];
+      document.write("<br><br>Maksimal data:", maks);
+      //manimum data
+      var min = ip[0];
+      for (i = 1; i <= 4; i++) if (ip[i] < min) min = ip[i];
+      document.write("<br><br>Minimum data:", min);
+      //urutkan ip dari kecil ke besar
+      ip.sort();
+      //tampilkan ip yang sudah di urutkan
+      document.write("<br><br>Data Terurut a..z</br>");
+      for (i = 0; i <= 4; i++) document.write(ip[i], "");
+      //urutkan ip dari besar ke kecil
+      //reverse
+      ip.reverse();
+      document.write("<br><br>Data Terurut z..a</br>");
+      for (i = 0; i <= 4; i++) document.write(ip[i], "");
+      var min = Math.min[ip];
+      document.write("Minimum Data :", min);
+    </script>
+  </body>
+</html>
